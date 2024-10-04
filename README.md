@@ -1,1 +1,3 @@
 # PanHelperWeb
+## Chatbot Code
+The chatbot code is developed by back-end developers Nicole Lee and Masha Karach, focused on helping users on our website to be able to talk to an anonymous bot that can answer any questions they may have about RPI or the Panhellenic Community. It is currently in a machine learning training model, if asked a question it has never seen before, it will be saved and can be answered by developers later. The goal is to transition the bot work work with existing AI models to be able to handle any question given and customized reponses specific to RPI's Panhellenic Community. 
