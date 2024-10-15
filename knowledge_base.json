@@ -1,0 +1,90 @@
+{
+  "questions": [
+    {
+      "question": "what is a sorority?",
+      "answer": "A sorority is a social organization for women, typically at a college or university, that promotes friendship, leadership, academic support, and community service."
+    },
+    {
+      "question": [
+        "hello?",
+        "hi?"
+      ],
+      "answer": "Hi! How can I help you today?"
+    },
+    {
+      "question": "What is the best sorority?",
+      "answer": "All of RPI's sororities are fantastic, each offering a unique culture that can align with your personal values. Whether you prioritize leadership, academics, or social connections, there’s a great fit for everyone!"
+    },
+    {
+      "question": "Who are you?",
+      "answer": "I’m PaigePal, a AI training model created by the PanHelper team, designed to assist you with any questions you have. How can I help you today?"
+    },
+    {
+      "question": "What is Panhel?",
+      "answer": "The Panhellenic Council is a governing body made up of representatives from all sororities on campus. Its primary mission is to foster collaboration among sororities, create strong bonds, and enhance sorority life through various programs and initiatives. By working together, the council aims to promote a positive and inclusive environment for all members."
+    },
+    {
+      "question": "What is Greek life?",
+      "answer": "Greek life refers to the community of fraternities and sororities on a college campus. These organizations are typically involved in social, philanthropic, and academic activities. They offer a sense of community, leadership opportunities, and lifelong friendships."
+    },
+    {
+      "question": "How do I join a sorority?",
+      "answer": "To join a sorority, you'll need to go through a process called recruitment. This usually involves attending events, getting to know members, and learning about the values of each sorority. After the recruitment process, you may receive a bid, which is an invitation to join."
+    },
+    {
+      "question": "What is sorority recruitment?",
+      "answer": "Sorority recruitment is the formal process of joining a sorority. It often includes a series of events where potential new members meet active sorority members. You’ll attend information sessions, meet-and-greets, and other activities to learn about each sorority."
+    },
+    {
+      "question": "Do I need to meet certain requirements to join a sorority?",
+      "answer": "Yes, most sororities have requirements such as a minimum GPA, being a full-time student, and showing a commitment to the values of the sorority. Specific requirements may vary by campus and chapter."
+    },
+    {
+      "question": "What are the benefits of joining a sorority?",
+      "answer": "Joining a sorority offers many benefits, including making lasting friendships, leadership development, academic support, networking opportunities, and community service. You’ll also gain a sense of belonging and have opportunities for personal growth."
+    },
+    {
+      "question": "What is the time commitment like in a sorority?",
+      "answer": "Sorority life can be a time commitment, but it varies by chapter. You’ll likely be expected to attend weekly meetings, social events, and community service projects. However, chapters understand that academics come first and typically provide support in balancing both."
+    },
+    {
+      "question": "What’s the difference between a social sorority and an academic/professional sorority?",
+      "answer": "Social sororities focus on fostering friendships, leadership, and philanthropy, while academic or professional sororities center on career development, academic achievement, and networking in specific fields. Both can provide a supportive community, but their focus differs."
+    },
+    {
+      "question": "Is Greek life expensive?",
+      "answer": "There are costs associated with joining a sorority, such as membership dues, initiation fees, and event expenses. However, many sororities offer scholarships, payment plans, or financial aid to help members manage costs. Be sure to ask about these options during recruitment."
+    },
+    {
+      "question": "Can I join a sorority as a sophomore or junior?",
+      "answer": "Yes, many sororities accept members who are sophomores, juniors, or even seniors. Recruitment is open to students in various stages of their college careers, though certain sororities may have preferences or specific criteria for upperclassmen."
+    },
+    {
+      "question": "What kind of philanthropic work do sororities do?",
+      "answer": "Each sorority typically has a specific philanthropic cause they support, such as women's health, education, or community service. Members participate in fundraising events, volunteer opportunities, and advocacy work for these causes throughout the year."
+    },
+    {
+      "question": "What if I don’t get into the sorority I want?",
+      "answer": "Not everyone receives a bid to their top-choice sorority, but that doesn’t mean you won’t find a great fit elsewhere. It’s important to keep an open mind and explore all your options. You may also have the chance to participate in continuous open bidding (COB) after formal recruitment."
+    },
+    {
+      "question": "Can I still be involved in Greek life if I don’t join a sorority?",
+      "answer": "Absolutely! Many campuses have non-Greek organizations with similar goals, such as leadership development, philanthropy, and social activities. You can also get involved in Greek life by attending events and supporting friends who are members."
+    },
+    {
+      "question": [
+        "Who is Ethan Stubbs?",
+        "Who is Ethan?",
+        "Who is Stubbs?"
+      ],
+      "answer": "Ethan Stubbs is the Associate Dean of Fraternity & Sorority Commons (FSC), you can find his contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
+    },
+    {
+      "question": [
+        "Who is Mel Daley?"
+      ],
+      "answer": "Mel Daley is the Assistant Dean of Fraternity & Sorority Commons (FSC), you can find their contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
+    }
+  ],
+  "unanswered_questions": []
+}
