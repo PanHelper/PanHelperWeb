@@ -13,11 +13,11 @@
     },
     {
       "question": "What is the best sorority?",
-      "answer": "All of RPI's sororities are fantastic, each offering a unique culture that can align with your personal values. Whether you prioritize leadership, academics, or social connections, there\u2019s a great fit for everyone!"
+      "answer": "All of RPI's sororities are fantastic, each offering a unique culture that can align with your personal values. Whether you prioritize leadership, academics, or social connections, there’s a great fit for everyone!"
     },
     {
       "question": "Who are you?",
-      "answer": "I\u2019m PaigePal, a AI training model created by the PanHelper team, designed to assist you with any questions you have. How can I help you today?"
+      "answer": "I’m PaigePal, a AI training model created by the PanHelper team, designed to assist you with any questions you have. How can I help you today?"
     },
     {
       "question": "What is Panhel?",
@@ -33,7 +33,7 @@
     },
     {
       "question": "What is sorority recruitment?",
-      "answer": "Sorority recruitment is the formal process of joining a sorority. It often includes a series of events where potential new members meet active sorority members. You\u2019ll attend information sessions, meet-and-greets, and other activities to learn about each sorority."
+      "answer": "Sorority recruitment is the formal process of joining a sorority. It often includes a series of events where potential new members meet active sorority members. You’ll attend information sessions, meet-and-greets, and other activities to learn about each sorority."
     },
     {
       "question": "Do I need to meet certain requirements to join a sorority?",
@@ -41,14 +41,14 @@
     },
     {
       "question": "What are the benefits of joining a sorority?",
-      "answer": "Joining a sorority offers many benefits, including making lasting friendships, leadership development, academic support, networking opportunities, and community service. You\u2019ll also gain a sense of belonging and have opportunities for personal growth."
+      "answer": "Joining a sorority offers many benefits, including making lasting friendships, leadership development, academic support, networking opportunities, and community service. You’ll also gain a sense of belonging and have opportunities for personal growth."
     },
     {
       "question": "What is the time commitment like in a sorority?",
-      "answer": "Sorority life can be a time commitment, but it varies by chapter. You\u2019ll likely be expected to attend weekly meetings, social events, and community service projects. However, chapters understand that academics come first and typically provide support in balancing both."
+      "answer": "Sorority life can be a time commitment, but it varies by chapter. You’ll likely be expected to attend weekly meetings, social events, and community service projects. However, chapters understand that academics come first and typically provide support in balancing both."
     },
     {
-      "question": "What\u2019s the difference between a social sorority and an academic/professional sorority?",
+      "question": "What’s the difference between a social sorority and an academic/professional sorority?",
       "answer": "Social sororities focus on fostering friendships, leadership, and philanthropy, while academic or professional sororities center on career development, academic achievement, and networking in specific fields. Both can provide a supportive community, but their focus differs."
     },
     {
@@ -64,11 +64,11 @@
       "answer": "Each sorority typically has a specific philanthropic cause they support, such as women's health, education, or community service. Members participate in fundraising events, volunteer opportunities, and advocacy work for these causes throughout the year."
     },
     {
-      "question": "What if I don\u2019t get into the sorority I want?",
-      "answer": "Not everyone receives a bid to their top-choice sorority, but that doesn\u2019t mean you won\u2019t find a great fit elsewhere. It\u2019s important to keep an open mind and explore all your options. You may also have the chance to participate in continuous open bidding (COB) after formal recruitment."
+      "question": "What if I don’t get into the sorority I want?",
+      "answer": "Not everyone receives a bid to their top-choice sorority, but that doesn’t mean you won’t find a great fit elsewhere. It’s important to keep an open mind and explore all your options. You may also have the chance to participate in continuous open bidding (COB) after formal recruitment."
     },
     {
-      "question": "Can I still be involved in Greek life if I don\u2019t join a sorority?",
+      "question": "Can I still be involved in Greek life if I don’t join a sorority?",
       "answer": "Absolutely! Many campuses have non-Greek organizations with similar goals, such as leadership development, philanthropy, and social activities. You can also get involved in Greek life by attending events and supporting friends who are members."
     },
     {
@@ -77,17 +77,8 @@
         "Who is Ethan?",
         "Who is Stubbs?"
       ],
-      "answer": "Ethan Stubbs is the Associate Dean of Fratenity & Sorority Commons (FSC), you can find his contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
-    }, 
-    {
-      "question": "Who is Ethan Stubbs?",
-      "answer": "Ethan Stubbs is the Associate Dean of Fratenity & Sorority Commons (FSC), you can find his contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
-    }, 
-    {
-      "question": "Who is Ethan Stubbs?",
-      "answer": "Ethan Stubbs is the Associate Dean of Fratenity & Sorority Commons (FSC), you can find his contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
+      "answer": "Ethan Stubbs is the Associate Dean of Fraternity & Sorority Commons (FSC), you can find his contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
     }
   ],
-  "unanswered_questions": [
-  ]
+  "unanswered_questions": []
 }
