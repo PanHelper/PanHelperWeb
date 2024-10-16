@@ -81,6 +81,9 @@ header .icons span:last-child{
     transform: translate(-50%, -50%);
     background: #f2f2f2;
 }
+.days li.inactive{
+    color: #aaa;
+}
 .days li:hover::before{
     background: #f2f2f2;
 }
