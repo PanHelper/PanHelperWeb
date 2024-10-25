@@ -81,9 +81,31 @@
     },
     {
       "question": [
-        "Who is Mel Daley?"
+        "Who is Mel Daley?", 
+        "Who is Mel?"
       ],
       "answer": "Mel Daley is the Assistant Dean of Fraternity & Sorority Commons (FSC), you can find their contact information here: https://sll.rpi.edu/student-living-and-learning-staff"
+    }, 
+    {
+      "question": [
+        "Who is Alpha Gamma Delta?", 
+        "Who is AGD?"
+      ],
+      "answer": "The Zeta Eta chapter of Alpha Gamma Delta, founded in 1904 at Syracuse University, is one of RPI's three major social sororities. With nearly 200,000 sisters across 200 colleges, the sorority focuses on personal development and service, particularly fighting hunger through partnerships with Feeding America and Meals on Wheels. Their colors are red, buff, and green; their flower is a red and buff rose; their jewel is the pearl; and their mascot is a squirrel. The chapter maintains a strong GPA and can be followed at @rpialphagam."
+    },
+    {
+      "question": [
+        "Who is Alpha Phi?", 
+        "Who is Aphi?"
+      ],
+      "answer": "The Theta Tau chapter of Alpha Phi, founded in 1872 at Syracuse University, is the first women’s fraternity established in the Northeast and now has over 170 chapters in the U.S. and Canada. Their philanthropy focuses on women's heart health, promoting awareness of symptoms, treatment, and prevention of heart disease. Located at 1 Forsyth Drive at RPI, the chapter raises funds for the Alpha Phi Foundation through events like Heart Health Week, Alpha Phifa (a popular soccer tournament), and the Red Dress Gala. Sisters also volunteer with local organizations such as the Troy Boys and Girls Club, Troy Food Bank, and an animal shelter. Follow them at @rpialphaphi."
+    },
+    {
+      "question": [
+        "Who is Pi Beta Phi?", 
+        "Who is Pi Phi?"
+      ],
+      "answer": "The New York Epsilon chapter of Pi Beta Phi was founded on April 28, 1867, at Monmouth College, making it the first women’s fraternity modeled after men’s groups. At RPI, it started as Kappa Phi on April 27, 1982, with 11 charter members, becoming officially affiliated with Pi Beta Phi on September 4, 1984. Their mission is to promote friendship, cultivate leadership, and enrich lives through community service, with a focus on literacy through their philanthropic initiative, Read > Lead > Achieve. The chapter raises funds via events like the annual Powder Puff flag football game and formerly hosted the Mr. RPI fundraiser from 1985 to 2019. Their chapter house is located at 8 Sherry Road. Follow them at @rpipibetaphi."
     }
   ],
   "unanswered_questions": []
