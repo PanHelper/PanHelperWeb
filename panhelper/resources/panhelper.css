@@ -132,13 +132,13 @@ body {
     margin-top: 10px;
 }
 
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Import Google font - PT Sans Narrow */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .wrapper{
