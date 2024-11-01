@@ -153,6 +153,10 @@ body {
   padding: 25px 30px 10px;
   justify-content: space-between;
 }
+a {
+  text-decoration: none;
+  color: #B2A6D6;
+}
 header .icons{
   display: flex;
 }
@@ -239,3 +243,4 @@ header .current-date{
     padding: 20px;
     border-radius: 10px; 
 }
+
