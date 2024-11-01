@@ -71,29 +71,34 @@ body {
     font-size: 36px;
     color: #B2A6D6;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .welcome h1 span {
     font-family: 'Georgia', serif;
     font-weight: bold;
+    
 }
 
 .welcome p {
     font-size: 14px;
     color: #706F6F;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .purpose h2 {
     font-size: 24px;
     color: #B2A6D6;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .purpose p {
     font-size: 14px;
     color: #706F6F;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 /* orgs section */
