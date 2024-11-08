@@ -1,0 +1,231 @@
+main body {
+    background-color: #e2d6c0;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    /* padding-left: 9%;
+    padding-right: 1%; */
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Della Respira", serif;
+    color: #e4622e;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: 300;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 21px;
+    color: #378364;
+    font-weight: 200;
+  }
+  
+  main p {
+    font-size: 16px;
+    color: #4b4338;
+    font-style: normal;
+  }
+  
+  main img {
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  main div {
+    padding: 2% 8%;
+    text-align: left;
+  }
+  
+  main button {
+    border-radius: 50px;
+    background-color: #499d7b;
+    border: 2px solid;
+    font-family: "Kumbh Sans", sans-serif;
+    color: #fdf3de;
+    margin-top: -5px;
+    padding: 5px 25px;
+    font-size: 18px;
+    border: #499d7b 2px solid;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  main button:hover {
+    background-color: #e4622e;
+    color: #fdf3de;
+    border: #e4622e 2px solid;
+    transition: ease-in-out 0.4s;
+    transform: translateY(5px);
+  }
+  /*============= Hero Section =============*/
+  
+  .heroSection {
+    padding: 5%;
+    padding-top: 50px;
+  }
+  
+  .heroText {
+    display: inline-block;
+    background-color: #fdf3de;
+    width: 43%;
+    margin-left: 7%;
+    border-radius: 15px;
+    padding: 5% 10% 5% 6%;
+    box-shadow: #e2d6c0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .heroSection img {
+    position: absolute;
+    top: 15%;
+    right: 9%;
+    width: 500px;
+  }
+  
+  .heroSection button {
+    margin-left: 210px;
+    margin-top: 5px;
+  }
+  
+  .heroSection h2 {
+    margin: 2px;
+    margin-bottom: -5px;
+  }
+  
+  .heroSection h4 {
+    margin: 5px;
+    margin-top: 0;
+  }
+  
+  .heroSection p {
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /*============ Mission Statement ==============*/
+  
+  .missionStatement {
+    background-color: #fdf3de;
+    border-radius: 15px;
+    box-shadow: #e2d6c0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    margin-bottom: 30px;
+    height: auto;
+    padding: 40px auto;
+  }
+  
+  .missionStatement h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .missionStatement p {
+    margin-top: 3px;
+    margin-bottom: 4px;
+  }
+  
+  /*============ Selling Points: Left-Side Images ==============*/
+  
+  .sellingImgL {
+    float: left;
+    margin: 30px;
+    margin-left: 0;
+    padding: 0;
+  }
+  
+  .sellingImgL p {
+    /*Image Caption*/
+    margin: 4px;
+    margin-left: 5px;
+    color: #499d7b;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .sellingTextL {
+    margin-top: 45px;
+  }
+  
+  .sellingPointL p {
+    margin-top: 2px;
+  }
+  .sellingPointL h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 28px;
+  }
+  
+  /*============== Selling Points: Right-Side Images ============*/
+  
+  .sellingImgR {
+    margin: 30px;
+    margin-right: 0;
+    padding: 0;
+    text-align: right;
+    float: right;
+  }
+  
+  .sellingImgR p {
+    /*Image Caption*/
+    margin: 4px;
+    margin-right: 5px;
+    color: #499d7b;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .sellingTextR {
+    padding: 0;
+    width: 60%;
+    margin-left: 40px;
+    display: inline;
+  }
+  .sellingPointR p {
+    margin-top: 2px;
+  }
+  
+  .sellingPointR h4 {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+  
+  /*==========Final Sell===============*/
+  
+  .finalSell {
+    background-color: #fdf3de;
+    border-radius: 15px;
+    box-shadow: #e2d6c0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 40%;
+    margin: 80px auto;
+    margin-top: 150px;
+    height: auto;
+    padding: 40px auto;
+  }
+  .finalSell h6 {
+    font-size: 21px;
+    color: #4b4338;
+    text-align: center;
+    margin: 12px 0;
+  }
+  
+  .finalSell button {
+    margin: 10px auto;
+  }
