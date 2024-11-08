@@ -1,12 +1,14 @@
-const chatBody = document.querySelector(".chat-body")
-const messageInput = document.querySelector(".message-input")
-const sendMessageButton = document.querySelector("#send-message")
-const fileInput = document.querySelector("#file-input")
+const chatBody = document.querySelector(".chat-body");
+const messageInput = document.querySelector(".message-input");
+const sendMessageButton = document.querySelector("#send-message");
+const fileInput = document.querySelector("#file-input");
+const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
+const fileCancelButton = document.querySelector("#file-cancel");
 
 //API stuff
 
 //removed API key for privacy reasons, check https://ai.google.dev/ to get an API key
-const API_KEY = "API_KEY_HERE"; //paste API key here
+const API_KEY = "INSERT_API_KEY_HERE"; //paste API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
@@ -49,6 +51,8 @@ const generateBotResponse = async (incomingMessageDiv) => {
         messageElement.innerText = error.message;
         messageElement.style.color = "#ff0000";
     } finally {
+        //reset file
+        userData.file = {};
         incomingMessageDiv.classList.remove("thinking");
         chatBody.scrollTo({top: chatBody.scrollHeight, behavior: "smooth"});
 
@@ -60,9 +64,12 @@ const handleOutgoingMessage = (e) => {
   e.preventDefault();
   userData.message = messageInput.value.trim();
   messageInput.value = "";
+  fileUploadWrapper.classList.remove("file-uploaded");
 
   // Create and displays user messages
-  const messageContent = `<div class="message-text"></div>`;
+  const messageContent = `<div class="message-text"></div>${
+    userData.file.data ? `<img src="data:${userData.file.mime_type};base64,${userData.file.data}" class="attachment" />` : ""
+  }`;
   const outgoingMessageDiv = createMessageElement(messageContent, "user-message");
   outgoingMessageDiv.querySelector(".message-text").textContent = userData.message;
   chatBody.appendChild(outgoingMessageDiv);
@@ -102,16 +109,25 @@ fileInput.addEventListener("change", () => {
 
     const reader = new FileReader();
     reader.onload = (e) => {
+        fileUploadWrapper.querySelector("img").src = e.target.result;
+        fileUploadWrapper.classList.add("file-uploaded");
         const base64String = e.target.result.split(",")[1];
 
-        //stores file
-        userData.filefile = {
+        //stores fil e
+        userData.file = {
             data: base64String,
             mime_type: file.type
         }
         fileInput.value = "";
     }
     reader.readAsDataURL(file);
+});
+
+//cancels file upload
+fileCancelButton.addEventListener("click", () => {
+    userData.file = {};
+    fileUploadWrapper.classList.remove("file-uploaded");
+
 });
 
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e));
