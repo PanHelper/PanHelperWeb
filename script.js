@@ -8,7 +8,7 @@ const fileCancelButton = document.querySelector("#file-cancel");
 //API stuff
 
 //removed API key for privacy reasons, check https://ai.google.dev/ to get an API key
-const API_KEY = "AIzaSyDL0TUs_4GXHQ85m4M-UFCe0_ZnVg_T3sM"; //paste API key here
+const API_KEY = "API_KEY_HERE"; //paste API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
@@ -129,6 +129,30 @@ fileCancelButton.addEventListener("click", () => {
     fileUploadWrapper.classList.remove("file-uploaded");
 
 });
+
+// creates emoji picker and emoji selection
+const picker = new EmojiMart.Picker({
+    theme: "light",
+    skinTonePosition: "none",
+    previewPosition: "none",
+    onEmojiSelect: (emoji) => {
+        const {selectionStart: start, selectionEnd: end } = messageInput;
+        messageInput.setRangeText(emoji.native, start, end, "end");
+        messageInput.focus();
+    },
+    onClickOutside: (e) => {
+        if(e.target.id === "emoji-picker"){
+            document.body.classList.toggle("show-emoji-picker");
+
+        }else{
+            document.body.classList.remove("show-emoji-picker");
+
+        }
+    }
+
+});
+
+document.querySelector(".chat-form").appendChild(picker);
 
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e));
 document.querySelector("#file-upload").addEventListener("click", () => fileInput.click());
