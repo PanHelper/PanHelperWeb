@@ -7,7 +7,6 @@ const fileCancelButton = document.querySelector("#file-cancel");
 const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChabot = document.querySelector("#close-chatbot");
 
-
 //API stuff
 
 //removed API key for privacy reasons, check https://ai.google.dev/ to get an API key
@@ -99,7 +98,6 @@ const handleOutgoingMessage = (e) => {
         generateBotResponse(incomingMessageDiv);
     }, 600);
 }
-
 //Allows enter key to also be used when sending messages
 messageInput.addEventListener("keydown", (e) => {
     const userMessage = e.target.value.trim();
@@ -112,7 +110,6 @@ messageInput.addEventListener("input", () =>{
     messageInput.style.height = `${initialInputHeight.scrollHeight}px`;
     document.querySelector(".chat-form").style.borderRadius = messageInput.scrollHeight > initialInputHeight ? "15px" : "32px";
 });
-
 //file inputs
 fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
