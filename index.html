@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaigePal | AI Chatbot</title>
     <!--Google Fonts-->
-    <link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-rounded">close</span>
+    </button>
+
     <div class="chatbot-popup">
     <!--Chatbot Header-->
         <div class="chat-header">
@@ -35,7 +40,7 @@
             <form action="#" class="chat-form">
                 <textarea placeholder="Message..." class="message-input" required></textarea>
                 <div class="chat-controls">
-                    <button type="button" id="emoji-picker" class="material-symbols-rounded">sentiment_satisfied</button>
+                    <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
                     <div class="file-upload-wrapper">
                         <input type="file" accept="images/*" id="file-input" hidden>
                         <img src="#">

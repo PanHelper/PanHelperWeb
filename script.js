@@ -4,6 +4,9 @@ const sendMessageButton = document.querySelector("#send-message");
 const fileInput = document.querySelector("#file-input");
 const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
 const fileCancelButton = document.querySelector("#file-cancel");
+const chatbotToggler = document.querySelector("#chatbot-toggler");
+const closeChabot = document.querySelector("#close-chatbot");
+
 
 //API stuff
 
@@ -18,6 +21,8 @@ const userData = {
         mime_type: null
     }
 }
+const initialInputHeight = messageInput.scrollHeight;
+
 const createMessageElement = (content, ...classes) =>{
     const div = document.createElement("div");
     div.classList.add("message", ...classes);
@@ -65,6 +70,7 @@ const handleOutgoingMessage = (e) => {
   userData.message = messageInput.value.trim();
   messageInput.value = "";
   fileUploadWrapper.classList.remove("file-uploaded");
+  messageInput.dispatchEvent(new Event ("input"));
 
   // Create and displays user messages
   const messageContent = `<div class="message-text"></div>${
@@ -97,9 +103,14 @@ const handleOutgoingMessage = (e) => {
 //Allows enter key to also be used when sending messages
 messageInput.addEventListener("keydown", (e) => {
     const userMessage = e.target.value.trim();
-    if (e.key === "Enter" && userMessage) {
+    if (e.key === "Enter" && userMessage && !e.shiftKey && window.innerWidth > 768) {
         handleOutgoingMessage(e);
     }
+});
+messageInput.addEventListener("input", () =>{
+    messageInput.style.height = `${initialInputHeight}px`;
+    messageInput.style.height = `${initialInputHeight.scrollHeight}px`;
+    document.querySelector(".chat-form").style.borderRadius = messageInput.scrollHeight > initialInputHeight ? "15px" : "32px";
 });
 
 //file inputs
@@ -156,3 +167,5 @@ document.querySelector(".chat-form").appendChild(picker);
 
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e));
 document.querySelector("#file-upload").addEventListener("click", () => fileInput.click());
+chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+closeChabot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
