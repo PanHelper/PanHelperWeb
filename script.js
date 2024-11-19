@@ -10,7 +10,7 @@ const closeChabot = document.querySelector("#close-chatbot");
 //API stuff
 
 //removed API key for privacy reasons, check https://ai.google.dev/ to get an API key
-const API_KEY = "AIzaSyDL0TUs_4GXHQ85m4M-UFCe0_ZnVg_T3sM"; //paste API key here
+const API_KEY = "API_KEY_HERE"; //paste API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
