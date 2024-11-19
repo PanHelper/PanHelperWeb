@@ -10,7 +10,7 @@ const closeChabot = document.querySelector("#close-chatbot");
 //API stuff
 
 //removed API key for privacy reasons, check https://ai.google.dev/ to get an API key
-const API_KEY = "API_KEY_HERE"; //paste API key here
+const API_KEY = "AIzaSyDL0TUs_4GXHQ85m4M-UFCe0_ZnVg_T3sM"; //paste API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
@@ -21,6 +21,7 @@ const userData = {
     }
 }
 const initialInputHeight = messageInput.scrollHeight;
+const chatHistory = [];
 
 const createMessageElement = (content, ...classes) =>{
     const div = document.createElement("div");
@@ -32,14 +33,18 @@ const createMessageElement = (content, ...classes) =>{
 //Generate bot response using API
 const generateBotResponse = async (incomingMessageDiv) => {
     const messageElement = incomingMessageDiv.querySelector(".message-text");
+    //chat history from user
+    chatHistory.push({
+        role: "user",
+        parts :[{text: userData.message}, ...(userData.file.data ? [{inline_data: userData.file}] : [])]
+
+    });
 
     const requestOptions = {
         method: "POST",
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify({
-            contents: [{
-                parts :[{text: userData.message}, ...(userData.file.data ? [{inline_data: userData.file}] : [])]
-            }]
+            contents: chatHistory
         })
     }
     try{
@@ -47,9 +52,20 @@ const generateBotResponse = async (incomingMessageDiv) => {
         const data = await response.json();
         if(!response.ok) throw new Error(data.error.message);
 
-        //Get the bot's response
-        const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
+        //Get the bot's response, formatting bullets
+        const apiResponseText = data.candidates[0].content.parts[0].text
+        .replace(/\*\*(.*?)\*\*/g, "$1") 
+        .replace(/^\*\s+/gm, "• ")      
+        .trim();
+    
         messageElement.innerText = apiResponseText;
+
+        //add history
+        chatHistory.push({
+            role: "model",
+            parts :[{text: apiResponseText}]
+    
+        });
     }catch(error){
         console.error(error);
         messageElement.innerText = error.message;
@@ -166,3 +182,24 @@ sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e));
 document.querySelector("#file-upload").addEventListener("click", () => fileInput.click());
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 closeChabot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+
+document.addEventListener("DOMContentLoaded", () => {
+    const notification = document.getElementById("chatbot-notification");
+    const dismissButton = document.getElementById("dismiss-notification");
+    const chatbotToggler = document.getElementById("chatbot-toggler");
+    setTimeout(() => {
+        notification.classList.add("show");
+    }, 1000);
+    dismissButton.addEventListener("click", () => {
+        notification.classList.remove("show");
+    });
+    notification.addEventListener("click", () => {
+        if (!notification.classList.contains("show")) return;
+        document.body.classList.add("show-chatbot");
+        notification.classList.remove("show");
+    });
+    chatbotToggler.addEventListener("click", () => {
+        notification.classList.remove("show");
+    });
+});
+

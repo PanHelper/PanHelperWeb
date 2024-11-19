@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 body{
     min-height: 100vh;
     background: linear-gradient(#EEEEFF, #C8C7FF);
+    background-color: #F4F0E8; 
 
 }
 #chatbot-toggler{
@@ -363,4 +364,48 @@ body.show-emoji-picker em-emoji-picker{
     .chat-form .file-upload-wrapper.file-uploaded #file-cancel{
         opacity: 0;
     }
+}
+
+.notification {
+    position: fixed;
+    bottom: 80px;
+    right: 35px;
+    background: #5350C4;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.notification button {
+    background: #fff;
+    color: #5350C4;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.notification button:hover {
+    background: #ecebff;
 }
