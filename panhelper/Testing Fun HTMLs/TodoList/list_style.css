@@ -67,6 +67,7 @@ textarea::-webkit-scrollbar {
     background-color: #f2f2f2;
     padding: 20px 15px;
     border-radius: 8px;
+    margin-top: 10px;
     position: relative;
     cursor: pointer;
 }
@@ -77,10 +78,11 @@ textarea::-webkit-scrollbar {
     pointer-events: none;
 }
 .ToDoLists .list .task {
-    height: 16px;
-    width: 16px;
-    accent-color: #4070f4;
-    
+    margin: 0 30px 0 15px;
+    word-break: break-all;
+}
+.list input:checked ~ .task {
+    text-decoration: line-through;
 }
 .ToDoLists .list i {
     position: absolute;
