@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanHelper</title>
     <link rel="stylesheet" href="../resources/panhelper.css">
+    <style>
+        .content-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .column {
+            text-align: center;
+            width: 22%;
+        }
+
+        .column img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .column h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .column p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -22,9 +52,31 @@
 
         <div class="main-content">
             <div class="content-box">
-                <!-- bruh moment -->
+                <div class="column">
+                    <img src="../resources/emmie.jpg" alt="Person 1">
+                    <h3>Emanuelle Simchowitz</h3>
+                    <p>This is a brief description about Person 1.</p>
+                </div>
+                <div class="column">
+                    <img src="../resources/aiden.jpg" alt="Person 2">
+                    <h3>Aiden Crossfield</h3>
+                    <p>This is a brief description about Person 2.</p>
+                </div>
+                <div class="column">
+                    <img src="../resources/masha.jpg" alt="Person 3">
+                    <h3>Masha Karach</h3>
+                    <p>This is a brief description about Person 3.</p>
+                </div>
+                <div class="column">
+                    <img src="../resources/nicole.jpg" alt="Person 4">
+                    <h3>Nicole Lee</h3>
+                    <p>This is a brief description about Person 4.</p>
+                </div>
             </div> 
+            
         </div>
+
     </div>
 </body>
 </html>
+
