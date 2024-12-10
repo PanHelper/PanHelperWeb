@@ -5,6 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanHelper</title>
     <link rel="stylesheet" href="../resources/panhelper.css">
+    <style>
+        .content-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            margin-top: 5%;
+        }
+
+        .column {
+            text-align: center;
+            width: 22%;
+        }
+
+        .column img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .column h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .column p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .faq-section {
+            margin: 40px 20px;
+        }
+
+        .faq-section h1 {
+            color:#555;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .faq-section li {
+            margin-bottom: 15px;
+        }
+
+        .faq-section li h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .faq-section li p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .main-content {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align children horizontally */
+        }
+
+        .faq-section {
+        width: 100%; /* Make FAQ section take full width */
+        }
+    </style>
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,14 +88,57 @@
                 <li><a href="../aboutus/aboutusfaq.html"><span class="icon">📋</span></a></li> <!-- FAQ link -->
                 <li><a href="../chatbot/chatbotembed.html"><span class="icon">💬</span></a></li> <!-- Chatbot link -->
                 <li><a href="../games/trivia.html"><span class="icon">⭐</span></a></li> <!-- Trivia link -->
+                <li><a href="../games/fakesorting.html"><span class="icon">🖌️</span></a></li> <!-- Sorting link -->
                 <li><a href="../calendar/calendar.html"><span class="icon">📅</span></a></li> <!-- calendar -->
             </ul>
         </nav>
 
         <div class="main-content">
             <div class="content-box">
-                <!-- bruh moment -->
+                <div class="column">
+                    <img src="../resources/emmie.jpg" alt="Person 1">
+                    <h3>Emanuelle Simchowitz</h3>
+                    <p>Emanuelle is a COMD and ITWS major and completed the front end and web design for this project.</p>
+                </div>
+                <div class="column">
+                    <img src="../resources/aiden.jpg" alt="Person 2">
+                    <h3>Aiden Crossfield</h3>
+                    <p>Aiden is a CS and GSAS major and developed our games that are featured on our website.</p>
+                </div>
+                <div class="column">
+                    <img src="../resources/masha.jpg" alt="Person 3">
+                    <h3>Masha Karach</h3>
+                    <p>Masha is a CS major and co-developed the chatbot as well as exploring other website capabilities with additional features and pages.</p>
+                </div>
+                <div class="column">
+                    <img src="../resources/nicole.jpg" alt="Person 4">
+                    <h3>Nicole Lee</h3>
+                    <p>Nicole is a CS major and worked on training the chatbot and created the page for it.</p>
+                </div>
             </div> 
+            <div class="content-box">
+                <div class="faq-section">
+                    <h1>Frequently Asked Questions about Sorority Life and Recruitment</h1>
+                    <ul>
+                        <li>
+                            <h3>What is sorority recruitment?</h3>
+                           <p>Sorority recruitment is the process where potential new members meet different sororities to find the one that best fits their values and goals.</p>
+                        </li>
+                        <li>
+                            <h3>How do I prepare for recruitment?</h3>
+                            <p>Be yourself, dress appropriately for each event, and research the sororities beforehand to understand their values and activities.</p>
+                        </li>
+                        <li>
+                            <h3>What are the benefits of joining a sorority?</h3>
+                            <p>Joining a sorority can provide lifelong friendships, networking opportunities, leadership experience, and chances to participate in philanthropic events.</p>
+                    </li>
+                    <li>
+                        <h3>Are there costs associated with joining?</h3>
+                        <p>Yes, there are membership dues and other fees. It's important to ask about these during the recruitment process to understand the financial commitment.</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </div>
     </div>
 </body>
