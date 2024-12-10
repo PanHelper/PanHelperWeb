@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=devide-width, intital-scale=1.0" />
+    <title>Dynamic Todo List Application</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../TodoList/list_style.css" />
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    nav class="sidebar">
+    <div class="logo">
+        <h1><a href="../homepage/home.html" style="text-shadow: 2px 2px 2px #d8e498">PH</a></h1>
+    </div>
+    <ul class="nav-icons">
+        <li><a href="../aboutus/aboutusfaq.html"><span class="icon">📋</span></a></li> <!-- faq -->
+        <li><a href="../chatbot/chatbotembed.html"><span class="icon">💬</span></a></li> <!-- chatbot -->
+        <li><a href="../games/trivia.html"><span class="icon">⭐</span></a></li> <!-- trivia -->
+        <li><a href="../games/fakesorting.html"><span class="icon">🖌️</span></a></li> <!-- Sorting link -->
+        <li><a href="../calendar/calendar.html"><span class="icon">📅</span></a></li> <!-- calendar -->
+        <li><a href="../Testing Fun HTMLs/TodoList/index.html"><span class="icon">📋</span></a></li> <!-- to do list -->
+
+    </ul>
+    </nav>
+    <div class="container">
+        <div class="input-field">
+            <textarea placeholder="Enter your new todo"></textarea>
+            <i class="uil uil-notes note-icon"></i>
+        </div>
+
+        <ul class="ToDoLists">
+            <li class="list">
+                <input type="checkbox" />
+                <span class="task">Testing.</span>
+                <i class="uil uil-trash"></i>
+            </li>
+            <li class="list">
+                <input type="checkbox" />
+                <span class="task">lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo expedita a
+                    aperiam ispum veniam></span>
+                <i class="uil uil-trash"></i>
+            </li>
+        </ul>
+
+        <div class="pending-tasks">
+            <span>You have </span>no </span>tasks pending.</span>
+            <button class="clear-button">Clear All</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+<link rel="stylesheet" href="../../resources/panhelper.css"
