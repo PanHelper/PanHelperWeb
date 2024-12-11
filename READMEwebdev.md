@@ -45,3 +45,5 @@ While my work has largely focused on design and organization so far, I look forw
 # WEB DEV FINAL COMMIT SUMMARY
 
 Everything I've said above still holds true, there are many more commits I have made that are entirely code, but I would implore you to look at the resources folder (specifcally the folder labeled sitemap&mockups) because I spent truly quite a few classes on those assets which significantly impacted my commit numbers. My purpose was primarily to get the ball rolling and then sweep in and pull it all together which, I believe, is reflected in my efforts in the front end and the design work from the beginning of the semester.
+
+PS: I ALSO DID THE POSTER
