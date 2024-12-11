@@ -126,10 +126,13 @@ body {
     width: 100px;
     height: 60px;
     background-color: #B2A6D6;
-    mask-image: url('shape-pattern.png'); /* Pattern from the design */
+    mask-image: url('motif.jpeg'); /* Pattern from the design */
     background-size: cover;
-    border-radius: 8px;
+    border-radius: 30px; /* More rounded corners */
     margin-top: 10px;
+    mask-size: 50%; /* Smaller mask image */
+    display: inline-block; /* Ensure it behaves like an inline element */
+
 }
 
 /* Import Google font - PT Sans Narrow */
@@ -661,28 +664,6 @@ body.show-emoji-picker em-emoji-picker{
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-body {
-    background-color: #abbecc;
-} 
-
-.container {
-    position: relative;
-    max-width: 480px;
-    width: 100%;
-    border-radius: 8px;
-    padding: 25px; 
-    margin: 85px auto 0;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
 
 .container .input-field {
     position: relative;
@@ -785,3 +766,50 @@ textarea::-webkit-scrollbar {
 .clear-button:hover {
     background-color: #0c4bf1;
 }
+
+
+.organization {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.org-image-container {
+    width: 40%;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.org-image-container img {
+    width: 100%; /* Make sure images fill the container */
+    border-radius: 8px;
+}
+
+.org-text {
+    width: 55%;
+}
+
+.organization .decorative-shape {
+    flex-grow: 1;
+    height: 50px; /* Example height for the decorative shape */
+    background-color: #d8e498; /* Your color */
+    margin-top: 10px;
+    margin-left: 10px;
+    bottom: 10; /* Position it at the bottom */
+    right: 10; /* Position it at the bottom-right corner of the image */
+}
+
+.organization:nth-child(2) .org-text {
+    text-align: right;
+}
+
+.organization:nth-child(2) .org-image-container {
+    order: 2; /* Move the image to the right */
+}
+
+.organization:nth-child(2) .decorative-shape {
+    align-self: flex-end; /* Align the shape to the right */
+}
+
+
+
