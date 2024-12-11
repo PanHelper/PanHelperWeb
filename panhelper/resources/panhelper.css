@@ -757,7 +757,7 @@ textarea::-webkit-scrollbar {
     padding: 6px 12px;
     outline: none;
     border: none;
-    background: #4070f4
+    background: #4070f4;
     color #fff;
     font-size: 14px; 
     border-radius: 14px;
@@ -768,20 +768,30 @@ textarea::-webkit-scrollbar {
 }
 
 
+/* Styling for the content boxes around the text blurbs */
+.content-box-text {
+    background-color: #F4F0E8; /* Slightly darker than the main content box */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+/* The .organization styling remains mostly unchanged */
 .organization {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .org-image-container {
     width: 40%;
-    margin-right: 20px; /* Space between image and text */
+    margin-right: 20px;
 }
 
 .org-image-container img {
-    width: 100%; /* Make sure images fill the container */
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -789,27 +799,33 @@ textarea::-webkit-scrollbar {
     width: 55%;
 }
 
-.organization .decorative-shape {
-    flex-grow: 1;
-    height: 50px; /* Example height for the decorative shape */
-    background-color: #d8e498; /* Your color */
-    margin-top: 10px;
-    margin-left: 10px;
-    bottom: 10; /* Position it at the bottom */
-    right: 10; /* Position it at the bottom-right corner of the image */
+.decorative-shape {
+    width: 60px;
+    height: 45px;
+    background-color: #d8e498;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 40%;
 }
 
 .organization:nth-child(2) .org-text {
     text-align: right;
 }
 
-.organization:nth-child(2) .org-image-container {
-    order: 2; /* Move the image to the right */
-}
-
 .organization:nth-child(2) .decorative-shape {
-    align-self: flex-end; /* Align the shape to the right */
+    left: 0;
+    right: unset;
 }
 
+.organization:nth-child(2) .org-image-container {
+    width: 40%;
+    margin-right: 20px; /* Space between image and text */
+    padding: 10px; /* Add padding */
+}
 
+.organization:nth-child(2) .org-image-container img {
+    width: 100%; /* Make sure the image fills the container */
+    border-radius: 8px;
+}
 
