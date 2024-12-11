@@ -126,10 +126,13 @@ body {
     width: 100px;
     height: 60px;
     background-color: #B2A6D6;
-    mask-image: url('shape-pattern.png'); /* Pattern from the design */
+    mask-image: url('motif.jpeg'); /* Pattern from the design */
     background-size: cover;
-    border-radius: 8px;
+    border-radius: 30px; /* More rounded corners */
     margin-top: 10px;
+    mask-size: 50%; /* Smaller mask image */
+    display: inline-block; /* Ensure it behaves like an inline element */
+
 }
 
 /* Import Google font - PT Sans Narrow */
@@ -763,3 +766,50 @@ textarea::-webkit-scrollbar {
 .clear-button:hover {
     background-color: #0c4bf1;
 }
+
+
+.organization {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.org-image-container {
+    width: 40%;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.org-image-container img {
+    width: 100%; /* Make sure images fill the container */
+    border-radius: 8px;
+}
+
+.org-text {
+    width: 55%;
+}
+
+.organization .decorative-shape {
+    flex-grow: 1;
+    height: 50px; /* Example height for the decorative shape */
+    background-color: #d8e498; /* Your color */
+    margin-top: 10px;
+    margin-left: 10px;
+    bottom: 10; /* Position it at the bottom */
+    right: 10; /* Position it at the bottom-right corner of the image */
+}
+
+.organization:nth-child(2) .org-text {
+    text-align: right;
+}
+
+.organization:nth-child(2) .org-image-container {
+    order: 2; /* Move the image to the right */
+}
+
+.organization:nth-child(2) .decorative-shape {
+    align-self: flex-end; /* Align the shape to the right */
+}
+
+
+
